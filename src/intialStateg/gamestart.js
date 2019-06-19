@@ -19,13 +19,11 @@ const InitialState = ({
         {!flip ? (
           <img
             src={coins[randCoins1]}
-            style={{ width: "250px", height: "250px" }}
             alt="head"
           />
         ) : (
           <img
             src={coins[randCoins2]}
-            style={{ width: "250px", height: "250px" }}
             alt="tail"
           />
         )}
@@ -35,7 +33,6 @@ const InitialState = ({
     <figure>
       <img
       src={coins[randCoins1]}
-      style={{ width: "250px", height: "250px" }}
       alt="head"
     />
       </figure>

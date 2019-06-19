@@ -2,7 +2,8 @@ import React from "react";
 import "./sTable.css"
 
 const Stable = ({ right,wrong,change }) => {
-   
+
+
   return (
     <table>
     <thead>
@@ -18,7 +19,7 @@ const Stable = ({ right,wrong,change }) => {
       </tr>
       <tr>
         <td>Wrong</td>
-        <td className={change === 2 ? "redBackground" : null}>{wrong}</td>
+        <td className={change === 3 ? "redBackground" : null}>{wrong}</td>
       </tr>
       </tbody>
     </table>

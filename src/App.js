@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import "./App.css";
 import Head from "./Head/head";
 import Tail from "./Tail/tail";
@@ -20,7 +20,7 @@ function App() {
   const [finalCoin, setFinal] = useState(false);
   const [right, setRight] = useState(0);
   const [wrong, setWrong] = useState(0);
-  const [change, setChange] = useState(0);
+  const [change,setChange] = useState(0)
 
   useEffect(() => {
     setChange(1);
@@ -29,11 +29,12 @@ function App() {
     }, 4000);
   }, [right]);
   useEffect(() => {
-    setChange(2);
+    setChange(3);
     setTimeout(() => {
       setChange(0);
     }, 4000);
   }, [wrong]);
+
 
   if (randCoins1 === randCoins2) {
     randUp(randNum(coins));
@@ -118,7 +119,7 @@ function App() {
               }
             }}
           />
-          <Stable right={right} wrong={wrong} change={change} />
+          <Stable right={right} wrong={wrong} change={change}  />
         </React.Fragment>
       )}
     </div>
