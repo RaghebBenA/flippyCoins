@@ -1,0 +1,27 @@
+.dinar-head{
+    width: 250px;
+    height: 250px;
+    background-color: white
+    
+}
+
+.dinars-tail{
+    width: 250px;
+    height: 250px;
+   
+}
+
+figure{
+    width: 250px;
+    height: 250px;
+  position: absolute;
+  margin: 0;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column
+}
+
+.back{
+    transform: rotateY(180deg);
+}

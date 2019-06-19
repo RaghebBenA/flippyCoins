@@ -1,0 +1,8 @@
+table, th, td {
+    border: 1px solid #D8D269;
+    border-collapse: collapse;
+    background-color: #222222;
+    color: white;
+    width: 10%;
+  margin-bottom: 10px
+  }

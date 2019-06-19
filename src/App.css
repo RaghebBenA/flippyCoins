@@ -1,33 +1,177 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.cont {
+  width: 100%;
+  height: 30vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cont-flip {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 0.11s ease-in-out infinite;
+  transform-style: preserve-3d;
 }
-
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateX(0deg);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: rotateX(180deg);
+  }
+}
+
+.button {
+  border: 1px solid black;
+  width: 10%;
+  height: 100%;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: rgba(25, 0, 255, 0.514);
+}
+.cont-button{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+padding-right: 20px;
+padding-bottom: 20px
+}
+
+.head-button{
+  border: 1px solid black;
+  width: 20%;
+  height: 100%;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  align-items: center;
+
+  font-size: 18px
+
+}
+.head-button:hover{
+  background-color: #D8D269
+}
+.head-button:active{
+  background-color: rgb(209, 202, 202);
+  transform: scale(0.8);
+  
+}
+.head-button:focus{
+  outline: none
+}
+
+.tail-button{
+  border: 1px solid black;
+  width: 20%;
+  height: 100%;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  background: none;
+  font-family: "Copperplate Gothic Bold";
+  font-size: 18px;
+  outline: none
+}
+
+
+.tail-button:hover{
+  background-color: #D8D269
+}
+
+.tail-button:active{
+  background-color: rgb(209, 202, 202);
+  transform: scale(0.8);
+  
+}
+.tail-button:focus{
+  outline: none
+}
+
+
+@media only screen and (max-width: 1400px){
+  .cont{
+    height: 50vh;
+  }
+  .cont-flip{
+    height: 50vh;
+  }
+  .button{
+    width: 20%;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px){
+ 
+
+  .button{
+    width: 50%;
+  }
+  .cont-button{
+    width: 100%
+  }
+  .head-button{
+    width: 40%
+  }
+  .tail-button{
+    width: 40%
+  }
+}
+@media only screen and (max-width: 800px){
+ 
+
+  .button{
+    width: 50%;
+  }
+  .cont-button{
+    width: 100%
+  }
+  .head-button{
+    width: 40%
+  }
+  .tail-button{
+    width: 40%
+  }
+}
+@media only screen and (max-width: 1200px){
+ 
+
+  .button{
+    width: 50%;
+  }
+  .cont-button{
+    width: 100%
+  }
+  .head-button{
+    width: 40%
+  }
+  .tail-button{
+    width: 40%
   }
 }
